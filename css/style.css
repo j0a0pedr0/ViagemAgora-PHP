@@ -1,0 +1,230 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+.box{
+    position:relative;
+    top:30px;
+}
+
+section.banner{
+    padding:200px 0;
+    width:100%;
+    min-height:600px;
+    background-image:url('../images/bg.jpg');
+    background-size:cover;
+    background-position:center; 
+    position:relative;
+}
+div .container{
+    position:relative;
+    z-index:2;
+}
+section.banner .container h2{
+    color:rgb(243, 243, 243);
+    font-size:73px;
+}
+section.banner .container p{
+    color:rgb(45, 192, 218);
+    font-size:18px;
+}
+section.banner .container a{
+    display:inline-block;
+    color:white;
+    padding:5px 15px;
+    font-size:16px;
+    background-color:rgb(104, 194, 182);
+    border-radius:17px;
+    text-decoration:none;
+}
+section.banner .container a:hover{
+    transform: scale(1.1,1.1);
+    background-color:rgb(104, 194, 182);
+    color:rgb(31, 65, 110);
+}
+.overlay{
+    z-index:1;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.3);
+}
+
+section.cadastro-lead{
+    padding:30px 0;
+    background-color:rgb(134, 197, 176);
+}
+section.cadastro-lead h2{
+    font-size:33px;
+    color:white;
+    position:relative;
+    top:-9px;
+}
+section.cadastro-lead input[type=text]{
+    width:85%;
+    height:40px;
+    border:2px solid #ccc;
+    margin-top:9px;
+}
+section.cadastro-lead input[type=text]:focus{
+    outline:0;
+}
+section.cadastro-lead input[type=submit]{
+    width:13%;
+    height:40px;
+    border-radius:5px;
+    background-color:rgb(91, 139, 133);
+    color:antiquewhite;
+}
+
+section.depoimento{
+    padding:70px 0;
+}
+section.depoimento h2{
+    position:relative;
+    top:-30px;
+}
+section.diferenciais{
+    padding:50px 0;
+    background-image:url("../images/bg-2.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+section.diferenciais > .overlay{
+    background-color:rgba(0,0,0,0.7);
+}
+section.diferenciais .container{
+    z-index:2;
+}
+
+section.diferenciais .container h2{
+    color:white;
+}
+section.diferenciais .container span{
+    font-size:80px;
+    color:rgb(45, 192, 218);
+}
+section.diferenciais p{
+    color:white;
+}
+section.diferenciais .row{
+    padding:47px 0 20px 0;
+}
+
+section.equipe{
+    padding:40px;
+}
+
+section.equipe .container{
+    padding-top:50px;
+}
+
+.equipe-single{
+    padding:20px 10px;
+    width:100%;
+    border:1px solid #ccc;
+    margin-bottom:50px;
+    -webkit-box-shadow: 5px 5px 5px 0px #525252, 14px 6px 27px 9px rgba(0,0,0,0.48); 
+    box-shadow: 5px 5px 5px 0px #525252, 14px 6px 27px 9px rgba(0,0,0,0.48);
+}
+.user-picture{
+    width:100%;
+    max-width:70px;
+    max-height:70px;
+    height:64px;
+    background-color:#ccc;
+    border-radius:50%;
+    background-size:cover;
+    background-position:center;
+    min-width:70px;
+    min-height:70px;
+}
+
+
+section.final-site{
+    width:100%;
+    padding:60px 0;
+    background-color:rgb(134, 197, 176);
+}
+section.final-site h2{
+    color:white;
+    padding-bottom:30px;
+}
+section.final-site form .input-group{
+    margin-bottom:20px;
+}
+section.final-site form textarea{
+    resize: vertical;
+    max-height:400px;
+}
+section.final-site form a{
+    display:inline-block;
+    color:white;
+    padding:5px 15px;
+    font-size:16px;
+    background-color:rgb(63, 134, 110);
+    border-radius:17px;
+    text-decoration:none;
+}
+section.final-site .container .table{
+    border-radius:10px;
+}
+
+footer{
+    padding:20px 0;
+    background:rgb(63, 134, 110);
+}
+footer p{
+    color:white;
+    margin:0 !important;
+}
+
+
+
+@media screen and (max-width:990px){
+    .user-picture{
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .container{
+        width:100% !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    section.banner .container h2{font-size:40px; }
+}
+
+@media screen and (max-width:400px){
+    .titulo-mobile{
+        font-size:28px;
+    }
+    .texto-normal{
+        font-size:15px;
+    }
+    section.banner .container h2{
+        color:rgb(243, 243, 243);
+        font-size:28px;
+    }
+    section.banner .container p{
+        color:rgb(83, 213, 236);
+    }
+    section.cadastro-lead h2{
+        font-size:26px;
+        color:white;
+        position:relative;
+        top:-9px;
+    }
+    section.cadastro-lead input[type=text]{
+        width:100%;
+    }
+    section.cadastro-lead input[type=submit]{
+        width:40%;
+        margin-top:14px;
+    }
+}
